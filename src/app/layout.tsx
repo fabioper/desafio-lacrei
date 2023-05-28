@@ -1,4 +1,3 @@
-import "./globals.css"
 import { Nunito } from "next/font/google"
 import React from "react"
 import StyledComponentsRegistry from "@/lib/registry"
