@@ -1,12 +1,13 @@
-import './globals.css'
-import { Nunito } from 'next/font/google'
-import React from "react";
+import "./globals.css"
+import { Nunito } from "next/font/google"
+import React from "react"
+import StyledComponentsRegistry from "@/lib/registry"
 
-const inter = Nunito({ subsets: ['latin'] })
+const inter = Nunito({ subsets: ["latin"] })
 
 export const metadata = {
-  title: 'Desafio Lacrei',
-  description: 'Desafio Front-end Lacrei',
+  title: "Desafio Lacrei",
+  description: "Desafio Front-end Lacrei",
 }
 
 export default function RootLayout({
@@ -16,7 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   )
 }
