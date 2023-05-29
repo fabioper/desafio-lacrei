@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 function Footer() {
   return (
@@ -12,6 +13,39 @@ function Footer() {
         </li>
         <li>
           <Link href="/profissional">Profissional</Link>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <Link href="/">
+            <Image
+              src="/icons/facebook.svg"
+              alt="Ícone do Facebook"
+              width={24}
+              height={24}
+            />
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <Image
+              src="/icons/instagram.svg"
+              alt="Ícone do Instagram"
+              width={24}
+              height={24}
+            />
+          </Link>
+        </li>
+        <li>
+          <Link href="/">
+            <Image
+              src="/icons/linkedin.svg"
+              alt="Ícone do Linkedin"
+              width={24}
+              height={24}
+            />
+          </Link>
         </li>
       </ul>
 
