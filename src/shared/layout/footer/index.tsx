@@ -18,32 +18,32 @@ function Footer() {
 
       <ul>
         <li>
-          <Link href="/">
-            <Image
-              src="/icons/facebook.svg"
-              alt="Ícone do Facebook"
-              width={24}
-              height={24}
-            />
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
+          <Link href="https://www.instagram.com/lacrei.saude" target="_blank">
             <Image
               src="/icons/instagram.svg"
               alt="Ícone do Instagram"
-              width={24}
-              height={24}
+              width={32}
+              height={32}
             />
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="https://www.facebook.com/lacrei.saude" target="_blank">
+            <Image
+              src="/icons/facebook.svg"
+              alt="Ícone do Facebook"
+              width={32}
+              height={32}
+            />
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.linkedin.com/company/lacrei" target="_blank">
             <Image
               src="/icons/linkedin.svg"
               alt="Ícone do Linkedin"
-              width={24}
-              height={24}
+              width={32}
+              height={32}
             />
           </Link>
         </li>
