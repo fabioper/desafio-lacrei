@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export function Header() {
+function Header() {
   return (
     <header>
       <Link href="/">
