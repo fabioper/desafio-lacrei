@@ -3,6 +3,7 @@
 import { useServerInsertedHTML } from "next/navigation"
 import { ServerStyleSheet, StyleSheetManager } from "styled-components"
 import { type PropsWithChildren, useState } from "react"
+import ThemeProvider from "@/styles/theme"
 
 export default function StyledComponentsRegistry({
   children,
@@ -19,7 +20,7 @@ export default function StyledComponentsRegistry({
 
   return (
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-      {children}
+      <ThemeProvider>{children}</ThemeProvider>
     </StyleSheetManager>
   )
 }
