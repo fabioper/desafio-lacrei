@@ -4,7 +4,11 @@ import StyledComponentsRegistry from "@/lib/registry"
 import Header from "@/shared/layout/header"
 import Footer from "@/shared/layout/footer"
 
-const nunito = Nunito({ subsets: ["latin"] })
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  preload: false,
+})
 
 export const metadata = {
   title: "Desafio Lacrei",

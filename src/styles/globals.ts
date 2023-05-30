@@ -16,6 +16,15 @@ const GlobalStyles = createGlobalStyle`
   body {
     background: ${props => props.theme.colors.background}
   }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
 `
 
 export default GlobalStyles

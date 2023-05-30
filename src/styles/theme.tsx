@@ -10,7 +10,7 @@ import GlobalStyles from "@/styles/globals"
 export const theme: DefaultTheme = {
   colors: {
     background: "#fff",
-    primary: "red",
+    primary: "#018762",
   },
 }
 
