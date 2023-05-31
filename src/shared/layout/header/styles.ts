@@ -26,6 +26,10 @@ export const Wrapper = styled.header`
       font-size: 1rem;
       font-weight: 700;
     }
+
+    a.active {
+      color: ${props => props.theme.colors.primary};
+    }
   }
 
   @media screen and (max-width: 640px) {

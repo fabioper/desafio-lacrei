@@ -1,6 +1,6 @@
 import { Nunito } from "next/font/google"
 import React, { type PropsWithChildren } from "react"
-import StyledComponentsRegistry from "@/lib/registry"
+import StyledComponentsRegistry from "@/styles/registry"
 import Header from "@/shared/layout/header"
 import Footer from "@/shared/layout/footer"
 

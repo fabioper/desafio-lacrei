@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Wrapper } from "@/shared/layout/header/styles"
+import NavLink from "@/shared/nav-link"
 
 function Header() {
   return (
@@ -9,9 +10,9 @@ function Header() {
       </Link>
 
       <nav>
-        <Link href="/">Home</Link>
-        <Link href="/pessoa-usuaria">Pessoa Usuária</Link>
-        <Link href="/profissional">Profissional</Link>
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/pessoa-usuaria">Pessoa Usuária</NavLink>
+        <NavLink href="/profissional">Profissional</NavLink>
       </nav>
     </Wrapper>
   )

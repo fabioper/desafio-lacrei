@@ -11,6 +11,7 @@ export const theme: DefaultTheme = {
   colors: {
     background: "#fff",
     primary: "#018762",
+    footerBorderColor: "#b0e0d3",
   },
 }
 
