@@ -38,6 +38,15 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
     justify-content: space-between;
     max-width: 453px;
     margin-top: 3rem;
+
+    @media (max-width: ${props => props.theme.sizes.md}) {
+      flex-direction: column;
+      gap: 1rem;
+
+      button {
+        min-width: 200px;
+      }
+    }
   }
 
   img {
@@ -60,15 +69,6 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
     .description {
       line-height: 1.5rem;
       font-size: 1rem;
-    }
-
-    .buttons {
-      flex-direction: column;
-      gap: 1rem;
-
-      button {
-        min-width: 200px;
-      }
     }
   }
 
