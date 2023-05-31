@@ -14,6 +14,16 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
   h2 {
     font-size: 3rem;
     margin: 0 0 2rem;
+
+    @media (max-width: ${props => props.theme.sizes.md}) {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: ${props => props.theme.sizes.sm}) {
+      font-size: 1.5rem;
+      margin-bottom: 0.875rem;
+    }
   }
 
   .description {
@@ -29,7 +39,17 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
       `
       padding-left: 0;
       border-left: none;
-    `}
+    `};
+
+    @media (max-width: ${props => props.theme.sizes.md}) {
+      line-height: 1.5rem;
+      font-size: 1rem;
+    }
+
+    @media (max-width: ${props => props.theme.sizes.sm}) {
+      line-height: 1.25rem;
+      font-size: 0.875rem;
+    }
   }
 
   .buttons {
@@ -43,7 +63,7 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
       flex-direction: column;
       gap: 1rem;
 
-      button {
+      & button {
         min-width: 200px;
       }
     }
@@ -60,29 +80,9 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
     flex-direction: column;
     align-items: center;
     padding: 2rem 2rem 0;
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    .description {
-      line-height: 1.5rem;
-      font-size: 1rem;
-    }
   }
 
   @media (max-width: ${props => props.theme.sizes.sm}) {
     padding: 1rem 1rem 0;
-
-    h2 {
-      font-size: 1.5rem;
-      margin-bottom: 0.875rem;
-    }
-
-    .description {
-      line-height: 1.25rem;
-      font-size: 0.875rem;
-    }
   }
 `
