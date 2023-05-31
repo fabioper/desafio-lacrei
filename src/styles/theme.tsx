@@ -14,7 +14,7 @@ export const theme: DefaultTheme = {
     footerBorderColor: "#b0e0d3",
   },
   sizes: {
-    sm: "520px",
+    sm: "570px",
     md: "1024px",
   },
 }

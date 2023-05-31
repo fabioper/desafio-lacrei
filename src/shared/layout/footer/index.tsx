@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Wrapper } from "@/shared/layout/footer/styles"
-import NavLink from "@/shared/nav-link"
+import NavLink from "../../components/nav-link"
 
 export default function Footer() {
   return (

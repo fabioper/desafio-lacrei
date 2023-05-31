@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Wrapper } from "@/shared/layout/header/styles"
-import NavLink from "@/shared/nav-link"
+import NavLink from "../../components/nav-link"
 
 function Header() {
   return (

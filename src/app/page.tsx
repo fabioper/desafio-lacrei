@@ -1,23 +1,28 @@
 import Link from "next/link"
 import Image from "next/image"
+import { PrimaryButton, SecondaryButton } from "@/shared/styles/button"
+import { Content } from "@/shared/styles/content"
 
 export default function Home() {
   return (
-    <main>
+    <Content hideBorder>
       <div>
-        <h1>Boas vindas a Lacrei Saúde</h1>
-        <p>Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+</p>
-        <div>
+        <h2>Boas vindas a Lacrei Saúde</h2>
+        <p className="description">
+          Uma plataforma segura e acolhedora para comunidade LGBTQIAPN+
+        </p>
+
+        <div className="buttons">
           <Link href="/pessoa-usuaria">
-            <button>Pessoa Usuária</button>
+            <PrimaryButton>Pessoa Usuária</PrimaryButton>
           </Link>
           <Link href="/profissional">
-            <button>Profissional</button>
+            <SecondaryButton>Profissional</SecondaryButton>
           </Link>
         </div>
       </div>
 
-      <Image src="/illustrations/home.svg" alt="" width={600} height={600} />
-    </main>
+      <Image src="/illustrations/home.svg" alt="" width={555} height={421} />
+    </Content>
   )
 }
