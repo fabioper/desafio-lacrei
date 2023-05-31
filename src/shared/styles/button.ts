@@ -11,6 +11,7 @@ export const Button = styled.button`
   transition: all 0.2s ease 0s;
   cursor: pointer;
   border: 2px solid transparent;
+  min-width: 200px;
 `
 
 export const PrimaryButton = styled(Button)`

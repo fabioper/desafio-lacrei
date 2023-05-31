@@ -62,10 +62,6 @@ export const Content = styled.main<{ hideBorder?: boolean }>`
     @media (max-width: ${props => props.theme.sizes.md}) {
       flex-direction: column;
       gap: 1rem;
-
-      & button {
-        min-width: 200px;
-      }
     }
   }
 
