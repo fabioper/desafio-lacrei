@@ -7,7 +7,6 @@ import Footer from "@/shared/layout/footer"
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
-  preload: false,
 })
 
 export const metadata = {

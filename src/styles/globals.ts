@@ -1,6 +1,6 @@
 "use client"
 
-import { createGlobalStyle } from "styled-components"
+import {createGlobalStyle} from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
   *, *::before, *::after {
@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
   }
   
   body {
-    background: ${props => props.theme.colors.background}
+    background: ${props => props.theme.colors.background};
   }
 
   a {
@@ -24,6 +24,10 @@ const GlobalStyles = createGlobalStyle`
     &:hover {
       opacity: 0.75;
     }
+  }
+  
+  button {
+    font-family: inherit;
   }
 `
 
