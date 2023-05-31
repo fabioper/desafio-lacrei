@@ -13,6 +13,10 @@ export const theme: DefaultTheme = {
     primary: "#018762",
     footerBorderColor: "#b0e0d3",
   },
+  sizes: {
+    sm: "520px",
+    md: "1024px",
+  },
 }
 
 export default function ThemeProvider({ children }: PropsWithChildren) {

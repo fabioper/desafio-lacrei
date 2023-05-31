@@ -25,6 +25,10 @@ export const Wrapper = styled.header`
     a {
       font-size: 1rem;
       font-weight: 700;
+
+      @media (max-width: ${props => props.theme.sizes.sm}) {
+        font-size: 0.875rem;
+      }
     }
 
     a.active {
@@ -32,7 +36,7 @@ export const Wrapper = styled.header`
     }
   }
 
-  @media screen and (max-width: 640px) {
+  @media (max-width: ${props => props.theme.sizes.sm}) {
     flex-direction: column;
   }
 `

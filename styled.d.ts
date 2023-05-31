@@ -7,5 +7,10 @@ declare module "styled-components" {
       primary: string
       footerBorderColor: string
     }
+
+    sizes: {
+      sm: string
+      md: string
+    }
   }
 }
